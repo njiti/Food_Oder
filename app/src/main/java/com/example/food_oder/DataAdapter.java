@@ -22,7 +22,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder>{
 
     private OnItemClickListener onItemClickListener;
 
-    public DataAdapter(Context ctx, ArrayList<DataModel> modeList){
+    public DataAdapter(Context ctx, ArrayList<DataModel> modelList){
         this.ctx = ctx;
         this.modelList= modelList;
     }
