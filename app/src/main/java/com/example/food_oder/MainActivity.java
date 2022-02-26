@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         TextView password =(TextView) findViewById(R.id.password);
 
         MaterialButton loginbtn = (MaterialButton ) findViewById(R.id.loginbtn);
-        MaterialButton continuebtn =(MaterialButton) findViewById(R.id.continuebtn);
 
         //admin and admin
         loginbtn.setOnClickListener(new View.OnClickListener(){
@@ -38,18 +37,20 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        continuebtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,FunnyActivity.class));
-            }
-        });
+
         loginbtn.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,FunnyActivity.class));
+            public void onClick(View v){
+                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
+                    //correct
+                    startActivity(new Intent(MainActivity.this,FunnyActivity.class));
+                }else{
+                    //incorrect
+                    Toast.makeText(MainActivity.this,"LOGIN FAILED !!!",Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
 
         }
 }
