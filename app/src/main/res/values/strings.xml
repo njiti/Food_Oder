@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Food_Oder</string>
+    <string name="sign_in">sign_in</string>
+    <string name="sign_In">sign in</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="login">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="or_sign_in_with">or sign in with</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+</resources>
